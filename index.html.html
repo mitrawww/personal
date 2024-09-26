@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Letter</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f8ff; /* Light background */
+            color: #333;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff; /* White background */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50; /* Darker text color */
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            background-color: #3498db; /* Button color */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Darker button on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Just a little something 🥰</h1>
+        <button onclick="openLetter()">Open</button>
+    </div>
+
+    <script>
+        function openLetter() {
+            const password = prompt("Please enter the password to open the letter:");
+            if (password === "something") {
+                const letterWindow = window.open("", "_blank", "width=1000,height=800");
+                letterWindow.document.write(`
+                    <html>
+                    <head>
+                        <title>Special Letter</title>
+                        <style>
+                            body {
+                                margin: 0;
+                                padding: 40px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100vh;
+                                background-color: #e8f8f5;
+                                color: #333;
+                                font-family: 'Comic Sans MS', cursive, sans-serif;
+                                text-align: left;
+                            }
+
+                            h2 {
+                                font-size: 2em;
+                                margin: 20px 0;
+                                color: #2980b9;
+                            }
+
+                            p {
+                                font-size: 1.2em;
+                                margin: 10px 0;
+                                line-height: 1.6;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <p>Hhey heeey heyyyyyyyyy!</p>
+                        <p>You know what? This is the first time am typing a letter to someone (which I love to do) you are "THE FIRST LUCKIESTTUUUU" to receive a letter from meee!</p>
+                        <p>kya bolu eka? am tired of typing you know? bass I wanna spend time abba with you "In Person" all these days just went by in imagination but rey when realityyy?</p>
+                        <p>All the hugssss, all the kissesss, all the cuddless? whennnn? Atleast once kuda time osthada anni alochisthuna telusa or will time pass by? 3 years? just texting and eye contacts and hi bye's?</p>
+                        <p>idk rey tu tho sach mei special ho meri life mei aur kyu? vo tho so many reasons go by but I can't think of any bas special tho you are I can say thattt!</p>
+                        <p>and our bond uska tho koi tag bhi nahi hai and that's the best part I feel honestly. Instead of commitments, relationships or stand by friendships we just have something rey and what is that "something"?</p>
+                        <p>never really wanted to take a chance and sit on it and think deeeeepppp cuz you know why?</p>
+                        <p>I just felt ki no matter whatever it is reality is IT IS BEAUTIFUL in every way anddddd what else..</p>
+                        <p>I can't give up on you eka honestly and I can't also mamulganey close aithe antha easy ga give up cheyanu alantidhi you is difficult but baat ye hai ki I am scared what if things change? and what if I'll go into a situation where I just have to look at you think "yeah he was a guy I was completely myself with and whom I trusted blindly" nah nah "WAS" no I don't want to but idk I don't want to think about it instead I just wanna live in moments that I'll never regret and also that'll remain as the sweetest memories with me.</p>
+                        <p>I know am an idiot to send this thing to you but emo konni cheyali anipisthadi naa reason lekunda this is one of it</p>
+                        <p>tataaa <br>sending you truck loads of hugsu kissesu and love. 💕</p>
+                    </body>
+                    </html>
+                `);
+                letterWindow.document.close();
+            } else {
+                alert("Incorrect password! Access denied.");
+            }
+        }
+    </script>
+</body>
+</html>
